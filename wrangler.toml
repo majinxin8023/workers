@@ -1,0 +1,17 @@
+name = "deepseek-graphql-worker"
+main = "src/index.ts"
+compatibility_date = "2025-05-13"
+
+# 定义环境变量（用于存储API密钥）
+[vars]
+# 这里不要填写实际的API密钥，仅作为示例
+DEEPSEEK_API_KEY = ""
+
+# 配置环境
+[env.production]
+# 生产环境专用配置
+workers_dev = true
+
+[env.development]
+# 开发环境专用配置
+workers_dev = true
