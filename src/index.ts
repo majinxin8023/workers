@@ -30,7 +30,7 @@ interface DeepSeekResponse {
  * Handles incoming fetch requests
  * @param event - The fetch event
  */
-addEventListener('fetch', (event: FetchEvent) => {
+addEventListener('fetch', (event: any) => {
   event.respondWith(handleRequest(event.request));
 });
 
