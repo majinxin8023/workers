@@ -40,7 +40,7 @@ const rootResolver = {
     try {
       console.log(`收到消息：${message}`, context);
       // 从环境变量获取DeepSeek API密钥
-      const apiKey = context.env.DEEPSEEK_API_KEY;
+      const apiKey = context.env.API_KEY;
 
       if (!apiKey) {
         console.error("DeepSeek API密钥未配置");
@@ -125,7 +125,7 @@ export default {
   async fetch(request, env, ctx) {
     // 添加环境变量调试日志
     console.log("Environment variables:", {
-      hasApiKey: !!env.DEEPSEEK_API_KEY,
+      hasApiKey: !!env.API_KEY,
       envKeys: Object.keys(env),
     });
 

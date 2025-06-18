@@ -6,7 +6,7 @@ compatibility_flags = ["nodejs_compat"]
 # 定义环境变量（用于存储API密钥）
 [vars]
 # 这里不要填写实际的API密钥，仅作为示例
-DEEPSEEK_API_KEY = ""
+API_KEY = ""
 
 # 配置环境
 [env.production]
